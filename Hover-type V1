@@ -1,0 +1,56 @@
+<DOCTYPE! html>
+    <html>
+        <head>
+            <title>Test Drop Box</title>
+            <style>
+                .name{
+                    display: block;
+                    text-align : center;
+                }
+                .btn{
+                    background-color:rgb(102, 137, 241);
+                    color: white;
+                    width: 40%;
+                    height: 10%;
+                    font-size: 50px;
+                }
+                .contents{
+                    display : none;
+                    background-color: white;
+                    color : black;
+                    font-size: 30px
+                }
+                .contents a{
+                    color: black;
+                    display : block;
+                }
+                
+                .name:hover .btn{background-color: lightseagreen}
+                .name:hover .contents{display : block;}
+                .contents a:hover {background-color :rgb(214, 214, 214);}
+
+            </style>
+        </head>
+
+
+        <body>
+            <header>
+                <p>Welcome</p>
+            </header>
+            <section>
+                <div class='name'>
+                    <button class='btn'>Click to login as</button>
+
+                    <div class= 'contents'>
+                        <a href= "#">Victoria</a>
+                        <a href= "#">Comet</a>
+                        <a href= "#">Slime</a>
+                    </div>
+
+                </div>
+
+            </section>
+        </body>
+
+
+    </html>
