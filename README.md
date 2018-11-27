@@ -1,2 +1,3 @@
 # Dropbox
-trying out a search function
+different structures
+improving at the moment
