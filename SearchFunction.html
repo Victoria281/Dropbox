@@ -5,30 +5,39 @@
             <title>Trying out Search function</title>
 
         <style>
-            
+            * {
+                box-sizing: border-box;
+                margin-left: 25px;
+            }
+
             #search{
                 border-color: rgb(0, 102, 255)49, 175, 175;
                 color: black;
                 font-size: 20px;
-                width: 100%;
+                width: 92.5%;
                 margin-bottom: 10px;
+
             }
             #loginids{
-                padding: 0;s
+                padding: 0;
                 list-style-type: none;
-                margin: 0;
+                width:92.5%;
+                
             }
             #loginids a{
-                background-color: azure;
+                background-color: rgb(154, 185, 231)49, 175, 175;
                 color: black;
                 border: 1px solid;
-                margin-top: -1px;
                 text-decoration: none;
-                padding:10px;
-                font-size: 18px;
+                padding:5px;
+                margin-top: -1px;
+                font-size: 15px;
+                display: block;
+                margin-left: -25px;
+                font-family: Arial, Helvetica, sans-serif;
             }
-            #loginids a:hover {
-                background-color: #eee
+            #loginids a:hover:not(.header) {
+                background-color: rgba(139, 146, 253, 0.774);
             }
 
         </style>
@@ -36,21 +45,73 @@
 
         <body>
                               
-            <h1>Login IDs</h1>
+            <h1 style= 'color: rgb(0, 0, 204)' >Login IDs</h1>
                     
-            <input id="search" type="text"  onkeyup= "myFunction()" placeholder = "Type in an ID" title="Searching for IDs">
+            <input type="text" id="search" onkeyup="searchid()" placeholder="Type in an ID" title="Searching for IDs">
                               
             <ul id="loginids" >
-                <li><a href='https://www.youtube.com'>Video</li>
-                <li><a href='https://mangapark.me'>Manga</li>
-                <li><a href='https://kissanime.ru'>Anime</li>
-                <li><a href='http://kissasian.sh/'>Drama</li>
-                <li><a href='https://github.com/GNZUL/Dropbox'>Home</li>
+                <li><a href='https://www.youtube.com'>Video</a></li>
+                <li><a href='https://mangapark.me'>Manga</a></li>
+                <li><a href='https://kissanime.ru'>Anime</a></li>
+                <li><a href='http://kissasian.sh/'>Drama</a></li>
+                <li><a href='https://github.com/GNZUL/Dropbox'>Home</a></li>
+
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u5bftZiBTTD5uulaIhk9kqDZMGdAA=&RelayState=undefined"> S8979373D </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u56USIieKs6+W8ilGqn5dDY605nwE=&RelayState=undefined"> S8116474F </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u5wzyrPN4IAqS54i4CJeSBIqOTnwI=&RelayState=undefined"> S8723211E </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u5At1RBDleDUqQh2zYegDGzNY//gM=&RelayState=undefined"> S5062854Z </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u5ZtjYrFnzHyCE/43yeAuIFR9NRgQ=&RelayState=undefined"> T0066846F </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u54Ie5Yn51RA7Spsq7wMnKzRtPywU=&RelayState=undefined"> F9477325W </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u5clk7LH/srzMFkASH/GZ6KLZZXgY=&RelayState=undefined"> S3000024B </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u5NXgITLa8a+FYkYwuyC1OeWxhSwc=&RelayState=undefined"> S6005040F </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u5vKd3R7aBobZDOoTlHFUHdfIYigk=&RelayState=undefined"> S6005041D </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u53MkgmfydslN8U5DfFale/3J0Vgo=&RelayState=undefined"> S6005043J </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u5lk6d/du4kEIoqCxRrLylwJP5QQs=&RelayState=undefined"> S6005044I </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u5asqL6g1KYqnqVGjv37/KyI3Uyww=&RelayState=undefined"> S6005045G </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u5dFLoHpOLfQY9Aq9SGc7u9r4k+A0=&RelayState=undefined"> S6005046E </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u5BhSmGBYt4lDlfBuI4vcMx3lzkA4=&RelayState=undefined"> S6005047C </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u58gegaEm+DDUg+63DfXtiSCEBHg8=&RelayState=undefined"> S6005064C </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u5yIVRNWK3tyUS1FHZK0UnWxxghhA=&RelayState=undefined"> S6005065A </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u5onbGR31biVNjQAl+JYnunzMQ5RE=&RelayState=undefined"> S6005066Z </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u5SZpf3jmCtsKIapyZbwOTflWhMxI=&RelayState=undefined"> S6005037F </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u5zTt+K3QatjktdqN0/UkBWH6qSxM=&RelayState=undefined"> S6005038D </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u5rFddwI/O22/mfz2WVztWzTEX5BQ=&RelayState=undefined"> S6005039B </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u5XsSgMDdkLEInc23N8kI4UUB6pRU=&RelayState=undefined"> G1612357P </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u5Gyi6tni4ILECsbk/Yda7jqkKuhY=&RelayState=undefined"> G1612358M </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u5SsPDASMQfyZCOScmLe5wPWbprBc=&RelayState=undefined"> F1612359P </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u5QF2ayxOcEN12It4v2ruQuiYt9hg=&RelayState=undefined"> F1612360U </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u52mcP1r8EPKcThuXT5sfS7PpxNhk=&RelayState=undefined"> F1612361R </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u5PYmlVAFQaP3Seu1+KnfxzWX1dxo=&RelayState=undefined"> F1612362P </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u5z1cvhEn6Wah9obeDpB7H4gadwxs=&RelayState=undefined"> F1612363M </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u5l266bRaMSBT+D5MYH6vKVaP13Rw=&RelayState=undefined"> F1612364K </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u5ffC4cRmtSuRHpstSZmQfzZpDpB0=&RelayState=undefined"> F1612365W </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u5GU2UDXa93YowY3Zaoq/g5GG7eh4=&RelayState=undefined"> F1612366T </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u5dcmoUk9R36HzxHv/wgST0mC9rh8=&RelayState=undefined"> F1612367Q </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u50l0BJpKt/XzOF8qi9aQBBjuoLyA=&RelayState=undefined"> F1612358R </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u5ixegFlr2GN1OKkeQL9uX50NtcyE=&RelayState=undefined"> F1612354N </a></li>
+                <li><a href = "http://localhost:5000/singpass/assert?SAMLart=AAQAAJbJdp4wf1C+BEmhdRe8lxPsO8u5ppyZyE1dyA6FQuZgVT0oqM7PfCI=&RelayState=undefined"> F1612357U </a></li>
+                
             </ul>  
               
 
         <script>
-        
+            function searchid(){
+                var inpt, filtered, ul_lst, lst, txt, txt_value;
+                inpt = document.getElementById('search')
+                filtered = inpt.value.toUpperCase();
+                ul_lst = document.getElementById("loginids");
+                lst = ul_lst.getElementsByTagName('li');
+                    for (var i = 0; i < lst.length; i++){
+                        txt = lst[i].getElementsByTagName('a')[0];
+                        txt_value = txt.textContent || txt.innerText;
+                            if (txt_value.toUpperCase().indexOf(filtered) > -1){
+                                lst[i].style.display = "";
+                            } else {
+                                lst[i].style.display = "none";
+                            }
+                    }
+                }
+
         </script>
 
         </body>
